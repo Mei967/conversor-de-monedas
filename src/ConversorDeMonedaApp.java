@@ -6,6 +6,7 @@ public class ConversorDeMonedaApp {
     public static void main(String[] args) {
 
         Scanner teclado = new Scanner(System.in);
+        int opcion;
 
         System.out.println("***************************************");
 
@@ -24,9 +25,11 @@ public class ConversorDeMonedaApp {
         System.out.println("************************************");
 
         while (true) {
+
              System.out.println("Elija una opción válida entre 1 y 7: ");
+
             if (teclado.hasNextInt()) { //validación de entrada (solo números)
-                int opcion = teclado.nextInt();
+                opcion = teclado.nextInt();
                 if (opcion >= 1 && opcion <= 7 ){
                     break;
                 }
@@ -39,8 +42,10 @@ public class ConversorDeMonedaApp {
                 teclado.next();
             }
 
-
         }
+        System.out.println("Has elegido la opción: " + opcion);
+
+        System.out.println(" Ingrese el valor a convertir");
 
 
 

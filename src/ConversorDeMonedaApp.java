@@ -45,15 +45,17 @@ public class ConversorDeMonedaApp {
         }
         System.out.println("Has elegido la opción: " + opcion);
 
-        System.out.println(" Ingrese el valor a convertir");
+        System.out.println(" Ingrese el monto a convertir");
+        double montoIngresado = teclado.nextDouble();
+
+        String monedaOrigen = "";//Determina moneda de acuerdo a ingreso
+        String monedaDestino = "";
 
 
+        ConversorMoneda conversor = new ConversorMoneda();
+        double resultado = conversor.convertir(montoIngresado, monedaOrigen, monedaDestino);
 
-
-
-
-
-
+        System.out.println("Resultado: " + resultado);
 
     }
 }

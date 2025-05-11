@@ -11,7 +11,7 @@ import java.net.http.HttpResponse;
        private static final String API_KEY = "61581fa232817507d9e1eedb";
 
        public double obtenerTasa(String monedaOrigen, String monedaDestino) {
-           String direccion = " https://v6.exchangerate-api.com/v6" + API_KEY + "/pair/" + monedaOrigen + "/" + monedaDestino;
+           String direccion = "https://v6.exchangerate-api.com/v6/" + API_KEY + "/pair/" + monedaOrigen + "/" + monedaDestino;
 
            HttpClient client = HttpClient.newHttpClient();//crea el cliente y solicitud Http
            HttpRequest request = HttpRequest.newBuilder()

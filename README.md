@@ -28,7 +28,7 @@ Este es un programa desarrollado en `Java` que permite convertir montos entre di
 
 Este es el menú principal que aparece cuando se ejecuta el programa:
 
-![Menú del conversor](img/menu.png)
+![Vista del menu principal](img/menu.png)
 
 ---
 

@@ -5,13 +5,12 @@ public class ConversorDeMonedaApp {
 
     public static void main(String[] args) {
 
-        Scanner teclado = new Scanner(System.in);
+        Scanner teclado = new Scanner(System.in);// Crear objeto Scanner para leer datos del usuario por consola
         int opcion;
 
         System.out.println("***************************************");
 
         System.out.println("Bienvenido al conversor de monedas");
-
         //menu
         System.out.println("""
                 1 Dólar =>> Peso Chileno
@@ -75,7 +74,7 @@ public class ConversorDeMonedaApp {
             }
             case 5 -> {
                 monedaOrigen = "USD";
-                monedaDestino = "COP";
+                monedaDestino = "COP";// COP = peso colombiano
             }
             case 6 -> {
                 monedaOrigen = "COP";
@@ -84,7 +83,7 @@ public class ConversorDeMonedaApp {
         }
 
 
-        ConversorMoneda conversor = new ConversorMoneda();
+        ConversorMoneda conversor = new ConversorMoneda();// Crear objeto que realiza la conversión utilizando la API
         double resultado = conversor.convertir(montoIngresado, monedaOrigen, monedaDestino);
 
         //Mostrar el resultado de la conversión con formato: 2 decimales y nombres de monedas
@@ -93,6 +92,8 @@ public class ConversorDeMonedaApp {
 
         System.out.println("\nConversión realizada exitosamente");
         System.out.println("Gracias por usar el conversor de monedas");
+
+        teclado.close();// Cerrar el scanner
     }
 
 }

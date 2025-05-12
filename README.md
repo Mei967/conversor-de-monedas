@@ -16,3 +16,15 @@ Este es un programa que permite convertir entre diferentes monedas utilizando un
 Este es el menú principal que aparece cuando se ejecuta el programa:
 
 ![Menú del conversor](img/menu.png)
+
+---
+
+## ✏️ Ingreso del monto
+
+Luego de elegir una opción del menú, el programa solicita al usuario ingresar el monto que desea convertir.  
+Este valor será usado junto a la tasa obtenida de la API para calcular el resultado.
+
+![Ingreso del monto](img/ingreso-monto.png)
+
+
+
